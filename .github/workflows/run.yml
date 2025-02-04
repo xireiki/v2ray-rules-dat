@@ -1,4 +1,4 @@
-name: Build V2Ray rules dat files
+name: Build V2ray/mihomo/sing-box rules data files
 on:
   workflow_dispatch:
   schedule:
