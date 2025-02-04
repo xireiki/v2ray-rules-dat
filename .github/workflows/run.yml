@@ -222,6 +222,7 @@ jobs:
           install -p {proxy,direct,reject}-list.txt ./publish/
           install -p {china-list,apple-cn,google-cn,gfw,win-spy,win-update,win-extra}.txt ./publish/
           install -p hosts ./publish/hosts
+          wget "https://github.com/${{ github.repository }}/raw/main/README.md" -O ./publish/README.md
 
       - name: Git push assets to "release" branch
         run: |
